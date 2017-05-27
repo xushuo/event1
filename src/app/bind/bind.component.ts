@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Observable} from "rxjs";
 import {FormControl} from "@angular/forms";
 import 'rxjs/Rx'
+import {Data} from "@angular/router";
 
 @Component({
   selector: 'app-bind',
@@ -11,7 +12,8 @@ import 'rxjs/Rx'
 export class BindComponent implements OnInit {
 
   searchInput:FormControl = new FormControl();
-
+  birth: Date = new Date();
+  pi: number = 3.1415926;
   constructor() {
     /*Observable.from([1,2,3,4])
       .filter(e => e%2==0)

@@ -10,3 +10,8 @@
   响应式编程222
 </h1>
 <input [formControl]="searchInput" placeholder="响应式编程222">
+
+<h3> 我的生日是{{birth | date | uppercase }}</h3>
+<h3> 我的生日是{{birth | date:'yyyy-MM-dd HH:mm:ss' }}</h3>
+<p>圆周率是 {{pi | number:'2.2-2'}}</p>
+<p>圆周率是 {{pi | double: 50 }}</p>
